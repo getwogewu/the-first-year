@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/blog.css">
+	<title>博客登录页</title>
+</head>
+<body>
+	<div class="bg">
+		<div id="header">
+			<div class="logo"></div>
+		</div>
+		<div id="body">
+			<form action="handle/sendMessage.php" method="post">
+				<input type="text" placeholder="报上名来" name="homework_name" class="name" >
+				<input type="password" placeholder="不给暗号不开门斯基~~" name="homework_password" class="password" >
+				<input type="submit" value="返回基地" id="login" >
+				<input  value="开辟新基地" onclick="oPen()"> 
+			</form>
+		</div>
+		<div id="register">
+			<form action="handle/sendMessage1.php" method="post">
+				<input type="text" placeholder="告诉全宇宙的逗逼，你的名号" name="homework_name" class="name">
+				<input type="password" placeholder="暗号" name="homework_password" class="password">
+				<input type="submit" value="完成开辟" class="submit">
+			</form>		
+		</div>
+		<div id="footer">
+			<span>二逼青年欢乐多</span>
+		</div>	
+	</div>
+	<script>
+		function oPen(){
+			var oRegister= document.getElementById('register');
+			oRegister.style.display='block';
+			var oBody=document.getElementById('body');
+			oBody.style.display="none";
+		}
+	</script>
+</body>
+</html>

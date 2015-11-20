@@ -1,0 +1,131 @@
+body{
+	font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	background: url(../img/map/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.cxcf{
+	width: 732px;
+	height: 417px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 32px;
+	background: url(../img/map/cxcf.png);
+	animation: float 3s linear infinite;
+	-moz-animation: float 3s linear infinite;
+	-webkit-animation: float 3s linear infinite;
+	-o-animation: float 3s linear infinite;
+}
+
+.title{
+	margin-top: -40px;
+}
+
+.map{
+	width: 981px;
+	height: 697px;
+	background: url(../img/map/map_bg.png);
+	background-size: cover;
+	padding-top: 25px;
+}
+
+.btn-bg{
+	width: 261px;
+	height: 41px;
+	margin-left: 358px;
+	background: url(../img/map/button_bg.png);
+}
+
+.btn{
+	width: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: #FF6F30;	
+	float: left;
+	cursor: default;
+}
+.btn-active{
+	background: url(../img/map/button.png);
+	width: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	float: left;
+	cursor: pointer;
+}
+
+.map-container{
+	width: 923px;
+	height: 598px;
+	margin-left: 26px;
+	margin-top: 16px;
+	border: 5px #fff solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+#big-map{
+	margin-left: -20%;
+	margin-top: -20%;
+}
+#small-map{
+	width: 171px;
+	height: 135px;
+	position: absolute;
+	margin-left: 744px;
+	/*margin-top: -824px;*/
+	top: 454px;
+	z-index: 99;
+	background: url(../img/map/map_small.png);
+	background-size: cover;
+}
+#map-select{
+	width: 74px;
+	height: 59px;
+	border: 1px #FF6520 solid;
+	cursor: pointer;
+	margin-left: 11%;
+	margin-top: 11%;
+}
+
+.swap{
+	width: 1826px;
+	height: 588px;
+	position: absolute;
+}
+
+#map-pic{
+	height: 588px;
+	width: 913px;
+}
+#map-real{
+	width: 913px;
+	height: 588px;
+	float: left;
+}
+#map-pic-container{
+	width: 913px;
+	height: 588px;
+	overflow: hidden;
+	float: left;
+}
+#position{
+	height: 50%;
+}
+#pano_holder{
+	height: 50%;
+}
+
+
+.footer{
+	margin-top: 58px;
+}
+
+
+

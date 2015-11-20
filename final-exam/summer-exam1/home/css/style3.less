@@ -1,0 +1,41 @@
+html{
+	font-size: 62.5%;
+}
+.fs(@px){
+	font-size: @px;
+	[data-dpr^="2"] &{
+		font-size: @px * 2;
+	}
+	[data-dpr^="3"] &{
+		font-size: @px * 3;
+	}
+}
+.logo{
+	height: 24.5rem;
+	position: relative;
+	img{
+		width: 13.5rem;
+		height: 13.5rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -6.75rem;
+		margin-top: 8.5rem;
+	}
+}
+.sorry-info{
+	.fs(16px);
+	color: #999;
+	text-align: center;
+}
+.continiue{
+	width: 580/6.4%;
+	height: 4.3rem;
+	background-color: #00AAEE;
+	border-radius: 10px;
+	color: #fff;
+	.fs(20px);
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -290/6.4%;
+}

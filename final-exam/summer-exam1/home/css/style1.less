@@ -1,0 +1,133 @@
+html{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+html,body,img,p,div,span{
+	padding: 0;
+	margin: 0;
+}
+@psd-w:64;
+.fs(@px){
+	font-size: @px;
+	[data-dpr^="2"] &{
+		font-size: @px * 2;
+	}
+	[data-dpr^="3"] &{
+		font-size: @px * 3;
+	}
+}
+.lh(@px){
+	line-height: @px;
+	[data-dpr^="2"] &{
+		line-height: @px * 2;
+	}
+	[data-dpr^="3"] &{
+		line-height: @px * 3;
+	}
+}
+.store{
+	margin: 1.05rem 0 0;
+	margin-left: 30/6.4%;
+	width: 100%-30/6.4%;
+	// background-color: red;
+	font-size: 0;
+	position: relative;
+}
+	.store-pic{
+		width: 7.5rem;
+		height:6.5rem;
+		margin-bottom: 1.05rem;
+	}
+	.store-info{
+		overflow: hidden;
+		display: inline-block;
+		height: 7.5rem;
+        width: 390/6.3%;
+        margin:0 20/6.3% 0;
+		font-size: 0;
+	}
+		.store-title{
+			height: 1.4rem;
+			width: 100%;
+			// font-size: 1.4rem;
+			.fs(15px);
+			.lh(16px);
+			letter-spacing: -1px;
+			background-color: #fff;
+			.title{
+				display: inline-block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 63%;
+				font-weight: bold;
+			}
+			img{
+				height: 1.4rem;
+				width: 1.4rem;
+				margin-left: 0.4rem;
+			}
+		}
+		.grade{
+			background-color: #fff;
+			// float: left;
+			//width: 230/4.1%;
+			margin: 0.85rem 0;
+			//background-color: yellow;
+			// .stars-ave{
+			// 	width:  230/4.1%;
+				.stars{
+					margin: 1.7rem 0;
+					height: 1.2rem;
+					// font-size: 1.2rem;
+					.fs(12px);
+					//width: 280/3.9%;
+					// margin-right: 0.75rem;
+					img{
+						height: 1.2rem;
+						width: 6.4rem;
+						// margin-right: 0.75rem;
+					}	
+				// }
+				// .average{
+				// 	font-size: 1.2rem;
+				// }
+			}
+			.good-dis{
+				margin: 0.85rem 0;
+				color: #ccc;
+				height: 1.2rem;
+				// font-size: 1.2rem;
+				.fs(12px);
+				.good{
+					img{
+						height: 1.2rem;
+						// font-size: 1.2rem;
+						.fs(12px);
+					}
+				}
+			}
+		}
+		.discount{
+			// float: right;
+			position: absolute;
+			right: 20/6.4%;
+			top: 2.3rem;
+			color: #F85800;
+			//font-face:
+			.num{
+				// font-size: 4rem;
+				.fs(40px);
+				// font-weight: bold;
+				letter-spacing:-3px;
+				line-height: 4.2rem;
+			}
+			.zhe{
+				// font-size: 1.5rem;
+				// letter-spacing:1px;
+				.fs(15px);
+			}
+
+		}
+
+

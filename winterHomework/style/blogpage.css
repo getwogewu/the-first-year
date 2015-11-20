@@ -1,0 +1,55 @@
+#body .left .dairy{
+	width: 710px;
+	height: 34px;
+	background-color:  #e0e0e0;
+}
+#body .left .dairy h4{
+	margin-left: 10px;
+	font-weight: bold;
+	color: #666;
+	line-height: 34px;
+}
+#body .person{
+	width: 226px;
+}
+#body .person h2{
+	height: 60px;
+	background-color: #e0e0e0;
+	text-align: center;
+	line-height: 60px;
+	font-weight: normal;
+	color:  #dc996e;
+	border-bottom: 1px solid #e1e1e1;
+}
+#body .person ul{
+	background-color: #fff;
+}
+#body .person ul li{
+	margin-left: 20px;
+	line-height: 44px;
+	font-size: 20px;
+	color: #666;
+}
+#body .left .dairy_content{
+	width: 710px;
+	max-height: 400px;
+	background-color: #fff;
+	border-bottom: 3px solid #666;
+	padding: 20px 0px;
+}
+#body .left .dairy_content .dairy_title{
+	margin: 0px 50px;
+	line-height: 50px;
+	height: 55px;
+	border-bottom: 2px solid #e0e0e0;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #ccc;
+}
+#body .left .dairy_content .content{
+	margin: 30px 50px 0px 50px;
+	line-height: 26px; 
+	color: #666;
+	font-weight: lighter;
+}

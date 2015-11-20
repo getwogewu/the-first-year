@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>响应式</title>
+	<link rel="stylesheet" href="style.css" >
+</head>
+<body>
+	<div class="black" id="shadow">
+		<section class="chance" id="select">
+			<p>
+				<span id="sure"><a>确定</a></span>
+				<span id="cancel">取消</span>
+			</p>
+			<details class="chance-nav" >
+				<summary class="sum">请选择约会类型</summary>
+				<ul>
+					<li class="type">运动<span>&#8730</span></li>
+					<li class="type">拼车<span></span></li>
+					<li class="type">娱乐<span></span></li>
+					<li class="type">自习<span></span></li>
+					<li class="type">棋牌<span></span></li>
+					<li class="type">吃饭<span></span></li>
+					<li class="type">旅游<span></span></li>
+					<li class="type">其他<span></span></li>
+				</ul>
+			</details>
+			<details class="chance-nav">
+				<summary class="sum">排序方式
+				</summary>
+				<ul>
+					<li class="type">一<span></span></li>
+					<li class="type">二<span></span></li>
+					<li class="type">三<span></span></li>
+				</ul>
+			</details>
+			<details class="chance-nav">
+				<summary class="sum">性别
+				</summary>
+				<ul>
+					<li class="type">一<span></span></li>
+					<li class="type">二<span></span></li>
+					<li class="type">三<span></span></li>
+				</ul>
+			</details>
+			<details class="chance-nav">
+				<summary class="sum">性别
+				</summary>
+				<ul>
+					<li class="type">一<span></span></li>
+					<li class="type">二<span></span></li>
+					<li class="type">三<span></span></li>
+				</ul>
+			</details>
+			<details class="chance-nav">
+				<summary class="sum">时间</summary>
+				<ul>
+					<li class="type">一<span></span></li>
+					<li class="type">二<span></span></li>
+					<li class="type">三<span></span></li>
+				</ul>
+			</details>
+		</section>
+	</div>
+	<div class="bg">
+		<div class="header">
+			<div class="title">
+				<div class="yiqiyue">一起约</div>
+				<div class="list" id ="list"></div>
+				<div class="list" id="find"></div>
+				<div class="list" id= "write"></div>
+			</div>
+			<div class="mune">
+				<div class="nav">首页</div>
+				<div class="px1">|</div>
+				<div class="nav">发现</div>
+				<div class="px1">|</div>
+				<div class="nav" id="nav-mes">消息
+					<div class="radius"></div>
+				</div>
+				<div class="px1">|</div>
+				<div class="nav">我</div>	
+			</div>
+		</div>
+		
+		<div class="banner">
+			
+		</div>
+		<div class="container">
+			<div class="info">
+				<div class="personal-info">
+					<div class="person1"></div>
+					<div class="data">
+						<div class="sth">
+							<p class="name">刘晓庆</p>
+							<div class="sex"></div>
+							<p class="tag">吃饭</p>
+						</div>
+						<p class="message">生命不息，折腾不止</p>
+					</div>
+				</div>
+				<hr>
+				<p class="mes">下午一起去吃饭，有约的吗</p>
+				<div class="litter"><div class="time"></div><span>6:00</span></div>
+				<div class="litter"><div class="plac"></div><span>老校门口</span></div>
+				<div class="litter" id="last"><div class="money"></div><span>我请客</span><span class="minute">3分钟前</span></div>
+			</div>
+			<div class="num"><span>报名:</span><span>10</span> </div>
+			<span class="px2">|</span>
+			<div class="num"><span>评论:</span><span>2</span></div>
+			<span  class="px2">|</span>
+			<div class="num"><span>点赞:</span><span>17</span></div>
+		</div>
+		<div class="container">
+			<div class="info">
+				<div class="personal-info">
+					<div class="person2"></div>
+					<div class="data">
+						<div class="sth">
+							<p class="name">姜文</p>
+							<div class="sex2"></div>
+							<p class="tag">电影</p>
+						</div>
+						<p class="message">生命不息，折腾不止</p>
+					</div>
+				</div>
+				<hr>
+				<p class="mes">下午一起去拍电影，来当我的女主角吧？</p>
+				<div class="litter"><div class="time"></div><span>6:00</span></div>
+				<div class="litter"><div class="plac"></div><span>老校门口</span></div>
+				<div class="litter" id="last"><div class="money"></div><span>我请客</span><span class="minute">3分钟前</span></div>
+			</div>
+			<div class="num"><span>报名:</span><span>10</span> </div>
+			<span class="px2">|</span>
+			<div class="num"><span>评论:</span><span>2</span></div>
+			<span  class="px2">|</span>
+			<div class="num"><span>点赞:</span><span>17</span></div>
+		</div>
+		<div class="chance"></div>
+	</div>
+	<script src="phone.js"></script>
+</body>
+</html>

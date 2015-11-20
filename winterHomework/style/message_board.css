@@ -1,0 +1,46 @@
+#body .left .write {
+	width: 710px;
+	height: 210px;
+	margin-bottom: 30px;
+}
+#body .left .write h4{
+	color: #fff;
+	line-height: 34px;
+	height: 34px;
+	text-align: center;
+	font-weight:  bold;
+	background-color: #C0C0C0;
+	width: 240px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+#body .left .write textarea{
+	width: 708px;
+	border: 1px solid #ccc;
+	line-height: 20px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+#body .left .write input{
+	float: right;
+	width: 80px;
+	height: 30px;
+	background-color: #C0C0C0;
+	border-radius: 8px;
+	border: 0;
+}
+#body .left .message{
+	width: 706px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+}
+#body .left .message p{
+	width: 666px;
+	margin: 40px 20px;
+}
+#body .left .message span{
+	font-size: 10px;
+	float: right;
+	margin: 20px;
+	color: #fff;
+}

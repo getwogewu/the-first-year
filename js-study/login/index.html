@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<p class = "loginButton">
+		<a id ="login_button">登录</a>
+		<a id = "register_button">注册</a>
+	</p>
+	<h1>欢迎</h1>
+	<div id="box_reg">
+		<div id="Register">
+			<p id="close" >关闭</p>
+			<form action="">
+				<p>学号:<input type="text" placeholder ="请输入你的学号" onblur="check(0)"><span> </span></p>
+				<p>邮箱:<input type="text" placeholder = "请输入你的邮箱" onblur="check(1)" ><span> </span></p>
+				<p>密码:<input type="password" placeholder = "请输入密码" onblur="check(2)"><span> </span></p>
+				<p>确认密码:<input type="password" placeholder = "重新输入密码" onblur ="check(3)"><span> </span></p>
+			</form>
+			<a id="button_reg">注册</a>
+		</div>
+	</div>
+	<div id="box_login">
+		<div id="login">
+			<p id="close_login" >关闭</p>
+			<form action="">
+				<p>学号:<input type="text" placeholder ="请输入你的学号" onblur="check_log(0)"><span> </span></p>
+				<p>密码:<input type="password" placeholder = "请输入密码" onblur="check_log(1)"><span> </span></p>
+			</form>
+			<a id="button_log">登录</a>
+		</div>
+	</div>
+	<script src="login.js">
+	</script>
+</body>
+</html>

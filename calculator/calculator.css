@@ -1,0 +1,47 @@
+body,
+p,
+div,
+input {
+  padding: 0;
+  margin: 0;
+}
+.text {
+  width: 356px;
+  background-color: #fff;
+  margin: 40px auto 0;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-bottom: 0;
+}
+.text input:first-child {
+  height: 40px;
+  font-size: 30px;
+}
+.text input {
+  width: 356px;
+  height: 50px;
+  border: 0;
+  text-align: right;
+  outline: 0;
+  font-size: 40px;
+  margin: 20px 0 0 ;
+}
+.button {
+  width: 360px;
+  background-color: #dedede;
+  margin: auto;
+  border: 2px solid #ccc;
+  border-top: 0;
+}
+.button .control .num {
+  text-align: center;
+  height: 50px;
+}
+.button .control .num input {
+  border: 0;
+  background-color: #dedede;
+  font-size: 26px;
+  outline: 0;
+  height: 80px;
+  width: 60px;
+}

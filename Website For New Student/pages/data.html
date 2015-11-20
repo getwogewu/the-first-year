@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据展示</title>
+	<link rel="stylesheet" href="../public/css/normalize.css">
+	<link rel="stylesheet" href="../public/css/public.css">
+	<link rel="stylesheet" href="../public/css/data.css">
+	<link rel="stylesheet" href="../public/font/iconfont.css">
+	<link rel="stylesheet" href="../public/font/people/iconfont.css">
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/jquery.lighter.js" type="text/javascript"></script>
+	<link href="../public/css/jquery.lighter.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+	<!-- toTop -->
+	<div id="to-top"></div>
+
+	<!-- 登录框 -->
+		<div id="login_bg">
+			<div class="signin">
+				<h2 class="title">新生登录<img src="../public/img/home/close.png" id="close_login"></h2>
+				<form  class="form" action="">
+					<p><i class="iconfont">&#xf007c;</i><span>|</span><input class="input" type="text" placeholder="姓名或通知书号" ></p>
+					<p><i class="iconfont">&#xe61c;</i><span>|</span><input class="input" type="password" placeholder="身份证后六位" ></p>
+				</form>
+				<div id="login_btn">登录</div>
+			</div>
+		</div>
+	
+	<!-- 完善信息 -->
+	<div id="mes_bg">
+		<div class="mes">
+			<h2 class="title">完善信息<img src="../public/img/home/close.png" id="close_mes"></h2>
+			<form action="">
+				<p>手机号码:<input class="input" type="text"></p>
+				<p>QQ号码:<input class="input" type="text"></p>
+			</form>
+			<div class="hobby">
+				<p>爱好标签:</p>
+				<ul>
+					<li>吃货</li>
+					<li>运动</li>
+					<li>唱歌</li>
+					<li>旅游</li>
+				</ul>
+				<ul>
+					<li>电视剧</li>
+					<li>阅读</li>
+					<li>绘画</li>
+					<li>摄影</li>
+				</ul>
+				<ul>
+					<li>电影</li>
+					<li>睡觉</li>
+					<li>网游</li>
+					<li>社交</li>
+				</ul>
+
+				<div id="pass">跳过</div>
+				<div id="sure">确认</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<!-- nav -->
+	<div class="header">
+		<div>
+			<img class="chongyoulogo" src="../public/img/home/chongyouLogo.png" alt="重庆邮电大学">
+			<ul class="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="map.html">重邮地图</a></li>
+				<li class="active"><a href="data.html">数据展示</a></li>
+				<li><a href="info.html">重邮百科</a></li>
+				<li><a href="stu.html">重邮风采</a></li>
+				<li><a href="">大声HI</a></li>
+				<li><a href="">关于我们</a></li>
+				<li id="new_student">新生登录</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div class="container">
+		
+		<div class="cxcf"></div>
+		<h2 class="title"><span class="word-left">数</span><span class="word-right">据</span><span class="word-left">展</span><span class="word-right">示</span></h2>
+        
+		<div class="data">
+			<div class="data_btn">
+				<div class="btn-bg">
+					<div class="btn btn_active" id="btn-friend-pic">找朋友</div>
+					<div class="btn" id="btn-data-pic">大数据</div>
+				</div>
+			</div>
+
+			<div class="df-container">
+				<div class="swag">
+					<!-- 找朋友 -->
+					<div id="find_friend" >
+						<div class="fri_nav">
+							<li class="fnav nav_active">找室友</li>
+							<li class="fnav">找同学</li>
+							<li class="fnav ">找辅导员</li>
+							<li class="fnav">找志同道合</li>
+						</div>
+	                     
+	                     <div class="fri-info" id="fri-info">
+	                     	 <!-- 找室友 -->
+
+		                     <div class="room-content">
+								<table class="table">
+									<tr>
+										<th class="room-nav">姓名</th>
+										<th class="room-nav">性别</th>
+										<th class="room-nav">学院</th>
+										<th class="room-nav">专业</th>
+										<th class="room-nav">籍贯</th>
+										<th class="room-nav">手机号码</th>
+										<th class="room-nav">QQ</th>
+									</tr>
+									<tr>
+										<td class="room-info">室友</td>
+										<td class="room-info">男</td>
+										<td class="room-info">将建军节建军节建军节</td>
+										<td class="room-info">是的的发生在是否达到发的发</td>
+										<td class="room-info">新疆</td>
+										<td class="room-info">12345678909</td>
+										<td class="room-info">1234567890</td>
+									</tr>
+								</table>
+							</div>
+
+		                     <!-- 找同学 -->
+
+		                     <div class="mate-content">
+		                     	<table class = "table">
+									<tr>
+										<th class="room-nav">姓名</th>
+										<th class="room-nav">性别</th>
+										<th class="room-nav">学院</th>
+										<th class="room-nav">专业</th>
+										<th class="room-nav">籍贯</th>
+										<th class="room-nav">手机号码</th>
+										<th class="room-nav">QQ</th>
+									</tr>
+									<tr>
+										<td class="room-info">同学</td>
+										<td class="room-info">男</td>
+										<td class="room-info">将建军节建军节建军节</td>
+										<td class="room-info">是的的发生在是否达到发的发</td>
+										<td class="room-info">新疆</td>
+										<td class="room-info">12345678909</td>
+										<td class="room-info">1234567890</td>
+									</tr>
+								</table>
+		                     </div>
+
+		                     <!-- 找辅导员 -->
+		                     <div class="teacher-content">
+									<div class="photo-box ">
+										<div class="photo-frame" id="kuo"><a href="../public/img/find/pic1.png" data-lighter><img src="../public/img/find/pic1.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">传媒艺术学院 - 吴扩绍</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic2.png" data-lighter><img src="../public/img/find/pic2.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">传媒艺术学院 - 吴倩</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic3.png" data-lighter><img src="../public/img/find/pic3.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">光电工程学院 - 张冬梅</span>
+									</div>
+									<div class="photo-box long" >
+										<div class="photo-frame long"><a href="../public/img/find/pic4.png" data-lighter><img src="../public/img/find/pic4.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">计算机科学与技术学院 - 陈劲松</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic5.png" data-lighter><img src="../public/img/find/pic5.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">体育学院 - 程瑶</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic6.png" data-lighter><img src="../public/img/find/pic6.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">法学院 - 张丹</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic7.png" data-lighter><img src="../public/img/find/pic7.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">软件工程学院 - 郝东超</span>
+									</div>
+									<div class="photo-box">
+										<div class="photo-frame"><a href="../public/img/find/pic8.png" data-lighter><img src="../public/img/find/pic8.png" alt="" class="photo"></a></div>
+										<span class="photo-dsc">经济管理学院 - 卢斌</span>
+									</div>
+							</div>
+
+		                     <!-- 找志同道合 -->
+		                     <div class="hob">
+		                     	<table class = "table">
+									<tr>
+										<th class="room-nav">姓名</th>
+										<th class="room-nav">性别</th>
+										<th class="room-nav">学院</th>
+										<th class="room-nav">专业</th>
+										<th class="room-nav">籍贯</th>
+										<th class="room-nav">手机号码</th>
+										<th class="room-nav">QQ</th>
+									</tr>
+									<tr>
+										<td class="room-info">兴趣</td>
+										<td class="room-info">男</td>
+										<td class="room-info">将建军节建军节建军节</td>
+										<td class="room-info">是的的发生在是否达到发的发</td>
+										<td class="room-info">新疆</td>
+										<td class="room-info">12345678909</td>
+										<td class="room-info">1234567890</td>
+									</tr>
+								</table>
+
+		                     </div>
+	                     </div>
+
+					</div>
+
+
+					<!-- 大数据 -->
+					<div id="big_data">
+						<div id="data_nav">
+							<li class="dnav nav_active">同乡比例</li>
+							<li class="dnav">男女比例</li>
+							<li class="dnav">同年同月</li>
+							<li class="dnav">最难科目</li>
+							<li class="dnav">毕业去向数据</li>
+						</div>
+
+						<div id="data_info">
+
+
+							<div id="chart">
+								
+								<div id="show">
+									<!-- 同乡比例 -->
+									<div id="show-home">
+										<p>在重邮你的老乡认数占全校人数比例为10%</p>
+										<div id="hometwon">
+										</div>
+										<p>同乡比例</p>
+									</div>
+									
+									<!-- 男女比例 -->
+									<div id="show-sex">
+										<p>你所在的学院和学院的男女比例为</p>
+										<div id="sex_fac"></div>
+										<div id="sex_school"></div>
+									</div>
+
+									<!-- 同年同月 -->
+									<div id="birth">
+										<p>学校里与你同年同月的比例以及与你同星座的比例为</p>
+										<div id="show-birth"></div>
+										<div id="show-star"></div>
+									</div>
+								</div>
+								
+								<div class="share1">分享到微博</div>
+								<div class="share2">分享到微信</div>
+								<div class="share3">分享到空间</div>
+							</div>
+							
+                             <div id="time">
+	                             	<!-- 最难科目 -->
+									<div id="study">
+										<div id="class"></div>
+									</div>
+
+									<!-- 毕业去向数据 -->
+									<div id="gra">
+										<div id="gra_school"></div>
+										<div id="gra_fac"></div>
+									</div>
+                             </div>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="change-page">
+				<div id="change-center">
+					<div id="pre">&lt</div>
+					<div id="num1">1</div>
+					<div id="num2">2</div>
+					<div id="num3">3</div>
+					<div id="num4">4</div>
+					<div id="num5">5</div>
+					<div id="num5">6</div>
+					<div id="next">&gt</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+		
+
+		
+
+
+	</div>
+
+
+
+
+	<div class="footer">
+    	<div class="declaration">
+           	<nav>
+                <a href="http://hongyan.cqupt.edu.cn/aboutus/">关于红岩网校</a>
+                <span>|</span>
+                <a href="http://hongyan.cqupt.edu.cn/sitemap/index.html">网站地图</a>
+                <span>|</span>
+                <a href="http://hongyan.cqupt.edu.cn/online/forum.php?mod=forumdisplay&fid=411">指出错误</a>
+                <span>|</span>
+                <a href="#">管理入口</a>
+                <span>|</span>
+            </nav>
+            <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+            <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail :redrock@cqupt.edu.cn (023-62461084)</p>
+        </div>
+    </div>
+
+</body>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="../public/js/config.js"></script>
+<script src="../public/js/pie.js"></script>
+<script src="../public/js/pie-sex.js"></script>
+<script src="../public/js/pie-sex1.js"></script>
+<script src="../public/js/pie-brith.js"></script>
+<script src="../public/js/pie-star.js"></script>
+<script src="../public/js/class.js"></script>
+<script src="../public/js/gra-school.js"></script>
+<script src="../public/js/gra-fac.js"></script>
+<script src="../public/js/data.js"></script>
+<script src="../public/js/to_top.js"></script>
+<script src="../public/js/login.js"></script>
+</html>

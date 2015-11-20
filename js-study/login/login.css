@@ -1,0 +1,98 @@
+body,div,p,span,input,button{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background-color: #2e5f3e;
+		font-family: Arial,"Microsoft YahHei",sans-serif;
+	}
+	.loginButton{
+		width: 960px;
+		margin: 0 auto;
+		text-align: right;
+		margin-top: 30px;
+		/*text-indent: 30px;*/
+	}
+	.loginButton #register_button,
+	.loginButton #login_button{
+		color: #fff;
+		margin-right: 20px;
+	}
+	h1{
+		color: #fff;
+		font-size: 100px;
+		margin-top: 100px;
+	    text-align: center;
+	}
+	#box_reg,
+	#box_login{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;bottom: 0;
+		left: 0;right: 0;
+		background-color: rgba(0, 0, 0, 0.85);
+		display: none;
+		z-index: 999;
+	}
+	#Register,
+	#login{
+		margin: auto;
+		position: absolute;
+		top: 0;bottom: 0;
+		left: 0;right: 0;
+		width: 466px;
+		height: 300px;
+		padding-bottom: 0;
+		border: 0; 
+		background-color: #4fa46b;
+		display: block;
+		cursor:pointer;
+	}
+	#Register form,
+	#login form{
+		width: 314px;
+		margin: 30px auto;
+	}
+	#Register input,
+	#login input{
+		height: 30px;
+		width: 200px;
+		text-align: center;
+		margin-left: 10px;
+		border-radius: 5px;
+		border: 0;
+		line-height: 30px;
+	}
+	#Register p,
+	#login p{
+		color: #fff;
+		margin-top: 10px;
+	}
+	#Register #close,
+	#login #close_login{
+		text-align: right;
+		padding-right:  10px;
+	}
+	#Register span,
+	#login span{
+		height: 10px;
+		font-size: 10px;
+		color: #10ddea;
+	}
+	#Register form :last-child input{
+		width: 168px;
+	}
+	#Register a,
+	#login a{
+		display: inline-block;
+		margin: 0 83px;
+		color: #fff;
+		width:248px ;
+		height:30px;
+		background-color: #2e5f3e;
+		line-height: 30px;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 5px;
+	}

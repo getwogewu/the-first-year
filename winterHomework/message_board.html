@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/all.css">
+	<link rel="stylesheet" type="text/css" href="style/message_board.css">
+	<title>博客主页</title>
+</head>
+<body>
+	<div class="bg">
+		<div id="header">
+			<div class="the_logo">
+				<div id="logo">
+					<div id="navigation">
+						<ul>
+							<li><a href="#">更多操作 ∨</a>
+								<ul>
+									<li>修改密码</li>
+									<li>退出</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+			    </div>
+			</div>
+			<div class="title">
+				<ul>
+					<li>
+						<a href="blogpage.html">首页</a>
+					</li>
+					<li>
+						<a href="diary.html">日志</a>
+					</li>
+					<li>
+						<a href="message_board.html">留言板</a>
+					</li>
+					<li onclick="photo()">
+						相册
+					</li>
+					<li>
+						<a href="person.html">个人信息</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="left">
+				<div class="write">
+					<h4>快来给博主留言啦ヾ(≧∇≦*)ゝ</h4>
+					<!--又是一个要写后台数据的-->
+					<form action="handle/sendMessage_msg.php" method="post">
+						<textarea class="textarea"></textarea>
+						<input type="button" value="提交">
+					</form>
+				</div>
+				<?php foreach ($allMessage as $value){ ?>
+					<div class="message">
+						<p><?php echo $value['msg_content']; ?></p>
+						<span><?php echo date("Y-m-d H:i:s",$value['msg_time']); ?> </span>
+					</div>
+				<?php } ?>
+				<div class="message">
+					<p>dfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsa</p>
+				</div>
+				<div class="message">
+					<p>dfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsa</p>
+				</div>
+				<div class="message">
+					<p>dfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsagdssadfdsfsdgsa</p>
+				</div>
+				<!--自动换行还没有解决/(ㄒ_ㄒ)/~~以及回复暂时还没有思路？？-->
+				<div cl
+			</div>
+			<div class="right">
+			</div>
+		</div>
+		<div id="footer">
+			<!--分页写在这里-->
+		</div>
+	</div>
+	<script src="script/blogpage.js"></script>
+</body>
+</html>

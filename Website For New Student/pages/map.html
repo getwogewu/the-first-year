@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重邮地图</title>
+	<link rel="stylesheet" href="../public/css/normalize.css">
+	<link rel="stylesheet" href="../public/css/public.css">
+	<link rel="stylesheet" href="../public/css/map.css">
+	<link rel="stylesheet" href="../public/font/iconfont.css">
+	<link rel="stylesheet" href="../public/font/people/iconfont.css">
+</head>
+<body onLoad="init()">
+	<!-- toTop -->
+	<div id="to-top"></div>
+	
+	
+	<!-- 登录框 -->
+		<div id="login_bg">
+			<div class="signin">
+				<h2 class="title">新生登录<img src="../public/img/home/close.png" id="close_login"></h2>
+				<form  class="form" action="">
+					<p><i class="iconfont">&#xf007c;</i><span>|</span><input class="input" type="text" placeholder="姓名或通知书号" ></p>
+					<p><i class="iconfont">&#xe61c;</i><span>|</span><input class="input" type="password" placeholder="身份证后六位" ></p>
+				</form>
+				<div id="login_btn">登录</div>
+			</div>
+		</div>
+	
+	<!-- 完善信息 -->
+	<div id="mes_bg">
+		<div class="mes">
+			<h2 class="title">完善信息<img src="../public/img/home/close.png" id="close_mes"></h2>
+			<form action="">
+				<p>手机号码:<input class="input" type="text"></p>
+				<p>QQ号码:<input class="input" type="text"></p>
+			</form>
+			<div class="hobby">
+				<p>爱好标签:</p>
+				<ul>
+					<li>吃货</li>
+					<li>运动</li>
+					<li>唱歌</li>
+					<li>旅游</li>
+				</ul>
+				<ul>
+					<li>电视剧</li>
+					<li>阅读</li>
+					<li>绘画</li>
+					<li>摄影</li>
+				</ul>
+				<ul>
+					<li>电影</li>
+					<li>睡觉</li>
+					<li>网游</li>
+					<li>社交</li>
+				</ul>
+
+				<div id="pass">跳过</div>
+				<div id="sure">确认</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<!-- nav -->
+	<div class="header">
+		<div>
+			<img class="chongyoulogo" src="../public/img/home/chongyouLogo.png" alt="重庆邮电大学">
+			<ul class="nav">
+				<li><a href="index.html">首页</a></li>
+				<li class="active"><a href="map.html">重邮地图</a></li>
+				<li><a href="data.html">数据展示</a></li>
+				<li><a href="info.html">重邮百科</a></li>
+				<li><a href="stu.html">重邮风采</a></li>
+				<li><a href="">大声HI</a></li>
+				<li><a href="">关于我们</a></li>
+				<li id="new_student">新生登录</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div class="container">
+		
+		<div class="cxcf"></div>
+
+
+		<h2 class="title"><span class="word-left">重</span><span class="word-right">邮</span><span class="word-left">地</span><span class="word-right">图</span></h2>
+
+		<div class="map">
+			<div class="btn-bg">
+				<div class="btn" id="btn-map-pic">2D地图</div>
+				<div class="btn btn-active" id="btn-map-real">街景地图</div>
+			</div>
+	
+			<div class="map-container">
+				<div class="swap" id="swap" style="left:0px">
+					
+					<!-- 2D -->
+
+					<div id="map-pic-container">
+						<div id="map-pic">
+							<img src="../public/img/map/map_big.jpg" id="big-map"></img>
+						</div>
+						
+						<div id="small-map">
+							<div id="map-select"></div>
+						</div>
+					</div>
+
+	
+					<!-- real -->
+					<div id="map-real">
+						<div id="position"></div>
+						<div id="pano_holder"></div>
+					</div>
+				
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+	</div>
+	
+
+
+
+
+	<div class="footer">
+    	<div class="declaration">
+           	<nav>
+                <a href="http://hongyan.cqupt.edu.cn/aboutus/">关于红岩网校</a>
+                <span>|</span>
+                <a href="http://hongyan.cqupt.edu.cn/sitemap/index.html">网站地图</a>
+                <span>|</span>
+                <a href="http://hongyan.cqupt.edu.cn/online/forum.php?mod=forumdisplay&fid=411">指出错误</a>
+                <span>|</span>
+                <a href="#">管理入口</a>
+                <span>|</span>
+            </nav>
+            <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+            <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail :redrock@cqupt.edu.cn (023-62461084)</p>
+        </div>
+    </div>
+
+</body>
+<script src="http://map.qq.com/api/js?v=2.exp&key=BGZBZ-AUJ34-PVZUQ-XBV3C-PQ3ZK-W7BVX"></script>
+<script src="../public/js/to_top.js"></script>
+<script src="../public/js/map_style.js"></script>
+<script src="../public/js/map.js"></script>
+<script src="../public/js/login.js"></script>
+</html>

@@ -1,0 +1,376 @@
+body{
+	font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	background: url(../img/map/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.cxcf{
+	width: 732px;
+	height: 417px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 32px;
+	background: url(../img/map/cxcf.png);
+	animation: float 3s linear infinite;
+	-moz-animation: float 3s linear infinite;
+	-webkit-animation: float 3s linear infinite;
+	-o-animation: float 3s linear infinite;
+}
+
+.title{
+	margin-top: -40px;
+
+}
+
+.data{
+	width: 981px;
+	height: 697px;
+	background: url(../img/map/map_bg.png);
+	background-size: cover;
+	padding-top: 25px;
+	display: inline-block;
+	margin-bottom: 100px;
+}
+
+.btn-bg{
+	width: 261px;
+	height: 41px;
+	margin-left: 358px;
+	background: url(../img/map/button_bg.png);
+}
+
+.btn{
+	width: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #FF6F30;	
+	float: left;
+	cursor: pointer;
+}
+ .btn_active{
+	background-image: url(../img/map/button.png);
+	width:130px;
+	height:40px;
+	color: #fff;
+	cursor: default;
+}
+
+.df-container{
+	background-image: url(../img/info/info_bg.png);
+	width: 921px;
+	margin: auto;
+	height: 544px;
+}
+.swap{
+	position: relative;
+}
+
+
+/*找朋友*/
+#find_friend{
+	display: block;
+}
+.fri_nav{
+	background-color: #fceea6;
+	height: 50px;
+	width: 921px;
+	margin: auto;
+	margin-top: 20px;
+	line-height: 50px;
+	display: block;
+}
+.fri_nav .fnav{
+	list-style-type: none;
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0 30px 0;
+	font-size: 20px;
+	color: #ff7a3b;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.fri_nav li:first-child {
+	margin-left: 156px;
+}
+.fri_nav li:last-child{
+	width: 130px;
+}
+.fri_nav .nav_active{
+	color: #fff;
+	background-color: #ff6f30;
+	cursor: default;
+}
+
+
+
+/*table样式总*/
+.table tr{
+	border-bottom: 1px solid #fceea6;
+	width: 921px;
+	text-align: center;
+}
+.table tr :first-child{
+	border-bottom: 2px solid #fceea6;
+}
+.table tr .room-nav{
+	width: 130px;
+	height: 35px;
+	text-align: center;
+}
+.table tr .room-info{
+	width: 130px;
+	height: 35px;
+	font-size: 14px;
+	text-align: center;
+}
+
+/*找室友*/
+.room-content{
+	display: block;
+}
+/*找同学*/
+.mate-content{
+	display: none;
+}
+/*找志同道合*/
+.hob{
+	display: none;
+}
+/*找辅导员*/
+.teacher-content{
+	display: none;
+}
+.photo-box{
+	width: 180px;
+	height: 205px;
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	margin: 40px 0 0 40px;
+}
+.photo-box-active .photo-frame{
+	background: #FF6F30;
+}
+.photo-box-active .photo-dsc{
+	color: #FF6F30;
+}
+.long{
+	width: 225px;
+	margin-left: 20px;
+}
+.long{
+	margin-left: 20px;
+}
+.photo-frame{
+	width: 180px;
+	height: 160px;
+	background: #6BBDAF;
+	cursor: pointer;
+}
+.photo{
+	width: 166px;
+	height: 120px;
+	margin: 20px 7px;
+}
+.photo-dsc{
+	display: inline-block;
+
+}
+
+/*大数据*/
+#big_data{
+	display: none;
+}
+#data_nav{
+	background-color: #fceea6;
+	height: 50px;
+	width: 921px;
+	margin: auto;
+	margin-top: 20px;
+	line-height: 50px;
+}
+#data_nav .dnav{
+	list-style-type: none;
+	display: inline-block;
+	/*float: left;*/
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0 30px 0;
+	font-size: 20px;
+	color: #ff7a3b;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#data_nav li:first-child {
+	margin-left: 80px;
+}
+#data_nav li:last-child{
+	width: 130px;
+}
+#data_nav .nav_active{
+	cursor: default;
+	color: #fff;
+	background-color: #ff6f30;
+}
+
+
+#data_info{
+	/*background-image: url(../img/info/info_bg.png);
+	width: 921px;
+	margin: auto;
+	height: 494px;*/
+	display: none;
+}
+#chart{
+	width: 550px;
+	margin: auto;
+	display: none;
+}
+#show{
+	width: 550px;
+	height: 400px;
+	margin: auto;
+	display: none;
+
+}
+.share1{
+	background-image: url(../img/find/weibo.png);
+	width: 165px;
+	height: 45px;
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 15px;
+}
+.share2{
+	background-image: url(../img/find/weixin.png);
+	width: 165px;
+	height: 45px;
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 15px;
+}
+.share3{
+	background-image: url(../img/find/weixin.png);
+	width: 165px;
+	height: 45px;
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 15px;
+}
+#chart #show a{
+	color: #fff;
+}
+/*同乡比例*/
+
+#hometwon{
+      width: 550px;
+      height: 300px;
+}
+#show-home{
+	display: none;
+}
+#show p{
+    text-align: center;
+    margin: 20px;
+}
+
+/*男女比例*/
+#show-sex{
+	display: none;
+	width: 550px;
+}
+#sex_fac{
+	width: 275px;
+	height: 300px;
+	float: left;
+}
+#sex_school{
+	width: 275px;
+	height: 300px;
+	float: left;
+}
+/*同年同月*/
+#birth{
+	display: none;
+}
+#show-birth{
+	width: 275px;
+	height: 300px;
+	float: left;
+}
+#show-star{
+	width:275px;
+	height: 300px;
+	float: left;
+}
+#time{
+	display: none;
+}
+/*最难科目*/
+#study{
+	display: none;
+}
+#class{
+	width: 800px;
+	height: 450px;
+	margin: 20px auto;
+	
+}
+/*毕业去向数据*/
+#gra{
+	display: none;
+	width: 800px;
+	height: 490px;
+	margin: auto ;
+}
+#gra_school{
+	height: 200px;
+	margin-top: 10px;
+	display: block;
+}
+#gra_fac{
+	height: 200px;
+}
+
+
+.change-page{
+	width: 920px;
+	height: 44px;
+	background: #fceea6;
+	margin: 0 auto;
+
+}
+#change-center{
+	width: 319px;
+	height: 45px;
+	margin: auto;
+	display: block;
+}
+#change-center div{
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 13px;
+	float: left;
+	border: 1px solid #ff6f30;
+	background: #ff6f30;
+	border-radius: 100%;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}

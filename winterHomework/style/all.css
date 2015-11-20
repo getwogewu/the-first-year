@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-family: "Microsoft YaHei";
+	height: 100%;
+	background-color: #353535;
+	word-wrap: break-word;
+	word-break:break-all;/*自动换行~~~*/
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: lighter; 
+}
+.bg{
+	min-width: 960px;
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+#header .the_logo{
+	background-color:#232323;
+}
+#header .the_logo #logo{
+	width: 960px;
+	height: 50px;
+	margin: 0 auto;
+	background-image: url("../images/logo1.png");
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+}
+#header .the_logo ul{
+	float: right;
+	width: 125px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-left: 1px solid #f1f8f0;
+	border-right: 1px solid #f1f8f0;
+}
+#header .the_logo ul li a{
+	display: block;
+	color: #dc996e;
+}
+#header .the_logo ul li :hover{
+	color: white;
+	background-color: #dc996e;
+}
+#header .the_logo ul li ul{
+	display: none;
+}
+#header .the_logo ul li:hover ul {
+	display: block;
+	width: 125px;
+	height: 100px;
+	color: #dc996e;
+	background-color:#232323;
+}
+#header .title{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+#header .title ul{
+	height: 50px;
+}
+#header .title ul li{
+	margin-left: 50px;
+	float: left;
+	color: #666;
+	font-weight: bold;
+	line-height: 50px;
+}
+#header .title ul li a{
+	color: #666;
+}
+#body{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#body .left{
+	width: 710px;
+	float: left;
+}
+#body .right{
+	width: 226px;
+	float: right;
+}

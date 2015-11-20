@@ -1,0 +1,37 @@
+#body{
+	width: 956px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+}
+#body .person{
+	margin: 30px 80px;
+}
+#body .person h2{
+	font-weight: bold;
+	color: #dc996e;
+	line-height: 40px;
+	height: 50px;
+	border-bottom: 2px solid #c0c0c0;
+	margin-bottom: 30px;
+}
+#body .person form input{
+	margin-bottom: 20px;
+}
+#body .person select{
+	margin-bottom: 20px;
+}
+#body .button input{
+	float: right;
+	margin: 0px  100px 30px 0px;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+	background-color: #c0c0c0;
+	border: 0px;
+}
+#body .person #photo{
+	width: 260px;
+	height: 190px;
+	border: 1px solid #000;
+	margin-bottom: 30px;
+}

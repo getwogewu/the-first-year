@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>全选反选</title>
+</head>
+<body>
+	<input type="button" value="反选"  id="btn1"><br>
+	<div id="div1">
+		<input type="checkbox" id="selectAll"/>全选<br>
+		<input type="checkbox"/>
+	    <input type="checkbox"/>
+	    <input type="checkbox"/>
+	    <input type="checkbox"/>
+    </div>
+    <script>
+	(function(){
+			//var oBtn1=document.getElementById('btn1');
+			var oBtn1 = document.querySelector('#btn1');
+			var selectAll=document.querySelector('#selectAll');
+			var oDiv=document.querySelector('#div1');
+			var oCh=oDiv.getElementsByTagName('input');
+			//全选和清除
+			function show(boolean){
+				for(var i=1, len =oCh.length; i<len; i++){
+						oCh[i].checked = boolean;
+				} 
+			}
+
+
+			selectAll.addEventListener("change",function(){
+				show(oCh[0].checked);
+			}
+			,false);
+
+			function panduan(){
+				var a = 0;
+	            for(var i=1, len =oCh.length; i<len; i++){
+	           		if(oCh[i].checked == true){
+						a++;
+					}else{
+						break;
+					}
+				}
+
+				if(a==len-1){
+					oCh[0].checked = true;
+				}else{
+					oCh[0].checked = false;
+				} 
+			}
+
+		   for(var i=1, len =oCh.length; i<len; i++){
+			   	oCh[i].addEventListener("change",function(){
+			   		panduan();
+			   	},false);
+		   }
+
+
+		   oBtn1.addEventListener("click",function(){
+				for(var i=1, len =oCh.length; i<len; i++){
+					oCh[i].checked = !oCh[i].checked;
+					panduan();
+				}
+			},false);
+             
+	})();
+	</script>
+</body>
+</html>

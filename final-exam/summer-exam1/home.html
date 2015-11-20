@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<script>
+	(function(doc){
+		var ajax = function(json) {
+			var xhr = null,
+				data = json['data'] ? json['data'] : null;
+			if (window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			}
+			if (window.ActiveXObject){
+				xhr = new ActiveXObject("Microsoft.XMLHttp");
+			} 
+			xhr.onreadystatechange = function() {
+				if(xhr.readyState == 4 && xhr.status == 200) {
+					var response = xhr.responseText;
+					json['success'](response);
+				}
+			}
+			xhr.open('POST', json['url']);
+			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+			xhr.send(data);
+		};
+		(function(){
+		ajax({
+				url: "http://kaohe.zeroling.com/kaohe/state",
+				success: function(response) {
+					var obj = JSON.parse(response);
+					var state = obj.state;
+					console.log(state);
+					window.location.href= "home/"+ state + ".html"; 
+				}
+			});
+	})();
+	})(document);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
