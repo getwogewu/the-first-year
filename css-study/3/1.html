@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	body{
+		font-size: 0;
+	}
+	div{
+	padding: 0;
+	margin: 0;
+	}
+	.one{
+		background-color: red;
+		height: 200px;
+		width: 600px;
+		position: relative;
+		top: 200px;
+		color:#fff;
+		font-size: 30px;
+		z-index: 10;
+	}
+	.two{
+		background-color: red;
+		height: 600px;
+		width: 200px;
+		position: relative;
+		left: 200px;top: -200px;
+	}
+	.three_one{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		float: left;
+		margin-left: 200px;
+	}
+	.three_two{
+		width: 600px;
+		height: 200px;
+		background-color: red;
+		font-size: 30px;
+		color: #fff;
+		clear: both;
+	}
+	.five_one{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		display: inline-block;
+	}
+	#five_one1{
+		background-color: white;
+	}
+	#five_one2{
+		width: 600px;
+		height: 200px;
+		background-color: red;
+		font-size: 30px;
+		color: #fff;
+	}
+	/*分隔符*/
+	.fenge{
+		height: 200px;
+		clear: both;
+	}
+	p{
+		font-size: 16px;
+	}
+	</style>
+	<title>布局小练</title>
+</head>
+<body>
+	<p>用CSS制作出十字架。</p>
+	<p>使用两个div完成</p>
+	<p>使用三个div完成</p>
+	<p>使用五个div完成</p>
+
+	<!-- 两个div -->
+	<div class="one">两个div,相对定位</div>
+	<div class="two"></div>
+
+	<!-- 三个div -->
+	<div class="three_one"></div>
+	<div class="three_two">三个div.float</div>
+	<div class="three_one"></div>
+	
+    <p class="fenge"></p>
+	<!-- 五个div -->
+
+	<div class="five_one" id="five_one1"></div>
+	<div class="five_one"></div>
+	<div  id="five_one2">五个div,inline-block</div>
+	<div class="five_one" id="five_one1"></div>
+	<div class="five_one"></div>
+</body>
+</html>
